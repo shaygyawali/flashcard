@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { getShuffledVideos } from '@/utils/get-videos';
 import Image from 'next/image';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
+import Flashcard from './components/flashcard';
 
 import {
   Container,
@@ -11,7 +12,6 @@ import {
   Typography,
   Box,
 } from '@mui/material';
-import Flashcard from './components/Flashcard';
 
 const Home = () => {
   const [videos, setVideos] = useState([]);
