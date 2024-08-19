@@ -4,6 +4,8 @@ import { getShuffledVideos } from '@/utils/get-videos';
 import Image from 'next/image';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
 import Flashcard from './components/flashcard';
+import Head from 'next/head'; // <-- Make sure to import Head here
+
 
 import {
   Container,
