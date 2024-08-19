@@ -19,7 +19,7 @@ const Home = () => {
 
   const loadVideos = async () => {
     const shuffledVideos = await getShuffledVideos();
-    setVideos(shuffledVideos);
+    setVideos(shuffledVideos.slice(0, 3)); // Limit the number of videos to 3
     setShowText(false); // Hide the text and background effect after the first shuffle
   };
 
