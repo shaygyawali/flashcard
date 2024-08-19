@@ -57,7 +57,7 @@ const Home = () => {
         }}
       >
         <Image
-          src={`./public/moneyhub_short.png`}
+          src={`/moneyhub_short.png`}
           width={155}
           height={80}
           alt="MoneyHub Logo"
