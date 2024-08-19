@@ -114,6 +114,7 @@ const Flashcard = ({ title, description, url, icon = <InfoIcon sx={{ fontSize: '
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
+              loading="lazy"
               style={{ borderRadius: '8px' }}
             ></iframe>
           </Box>
