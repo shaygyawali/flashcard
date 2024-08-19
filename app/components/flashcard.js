@@ -13,6 +13,11 @@ const Flashcard = ({ title, description, url, icon = <InfoIcon sx={{ fontSize: '
   };
 
   return (
+    <>
+      <Head>
+        {/* Preload specific video if needed */}
+        <link rel="preload" href={url} as="document" />
+      </Head>
     <Flip isFlipped={flipped} flipDirection="horizontal">
       <Card
         elevation={10}
@@ -121,6 +126,7 @@ const Flashcard = ({ title, description, url, icon = <InfoIcon sx={{ fontSize: '
         </CardContent>
       </Card>
     </Flip>
+    </>
   );
 };
 
