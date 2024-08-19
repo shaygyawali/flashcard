@@ -4,6 +4,8 @@ import Flip from 'react-card-flip';
 import { Card, CardContent, Typography, Box } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info'; // Example icon, choose any icon you like
 import ThreeSixtyIcon from '@mui/icons-material/ThreeSixty';
+import Head from 'next/head';
+
 
 const Flashcard = ({ title, description, url, icon = <InfoIcon sx={{ fontSize: '1rem' }} /> }) => {
   const [flipped, setFlipped] = useState(false);
@@ -14,10 +16,10 @@ const Flashcard = ({ title, description, url, icon = <InfoIcon sx={{ fontSize: '
 
   return (
     <>
-      <Head>
-        {/* Preload specific video if needed */}
-        <link rel="preload" href={url} as="document" />
-      </Head>
+    <Head>
+    {/* Preload specific video if needed */}
+    <link rel="preload" href={url} as="document" />
+  </Head>
     <Flip isFlipped={flipped} flipDirection="horizontal">
       <Card
         elevation={10}
